@@ -1,0 +1,18 @@
+// DemoPizza.java
+public class DemoPizza {
+    public static void main(String[] args) {
+        // Creating Pizza objects
+        Pizza pizza1 = new Pizza("pepperoni", 14.99);
+        Pizza pizza2 = new Pizza("green pepper", 12.99);
+
+        // Creating DeliveryPizza objects
+        DeliveryPizza deliveryPizza1 = new DeliveryPizza("cheese", 11.99, "22 Acorn");
+        DeliveryPizza deliveryPizza2 = new DeliveryPizza("pepperoni, sausage, and pineapple", 19.50, "47 Oak");
+
+        // Displaying the results
+        pizza1.display();
+        pizza2.display();
+        deliveryPizza1.display();
+        deliveryPizza2.display();
+    }
+}

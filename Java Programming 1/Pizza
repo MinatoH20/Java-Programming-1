@@ -1,0 +1,14 @@
+// Pizza.java
+public class Pizza {
+    private String toppings;
+    private double price;
+
+    public Pizza(String toppings, double price) {
+        this.toppings = toppings;
+        this.price = price;
+    }
+
+    public void display() {
+        System.out.println(toppings + " pizza   Price: $" + price);
+    }
+}

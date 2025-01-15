@@ -1,0 +1,17 @@
+// DeliveryPizza.java
+public class DeliveryPizza extends Pizza {
+    private double deliveryFee;
+    private String deliveryAddress;
+
+    public DeliveryPizza(String toppings, double price, String deliveryAddress) {
+        super(toppings, price);
+        this.deliveryAddress = deliveryAddress;
+        this.deliveryFee = (price > 15) ? 3.0 : 5.0;
+    }
+
+    @Override
+    public void display() {
+        super.display();
+        System.out.println("    Deliver to: " + deliveryAddress + ". Fee is " + deliveryFee);
+    }
+}
